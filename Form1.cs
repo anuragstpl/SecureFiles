@@ -26,6 +26,14 @@ namespace SecureFileSender
                 PgpEncrypt Pgp = new PgpEncrypt();
                 string EncryptedFileName = txtEncryptedFileName.Text != "" ? txtEncryptedFileName.Text : "output.enc";
                 Pgp.EncryptFile(txtOutputDirectory.Text + "/" + EncryptedFileName, txtFileToEncrypt.Text, txtPublicKeyFile.Text, true, true);
+                if (chkDeleteFile.Checked)
+                {
+                    File.Delete(txtFileToEncrypt.Text);
+                }
+                if (chkHideFile.Checked)
+                {
+                    File.SetAttributes(txtOutputDirectory.Text + "/" + EncryptedFileName, FileAttributes.Hidden);
+                }
                 MessageBox.Show("File Encrypted Successfully.Please check the output directory for encrypted file.", "Decryption Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
@@ -40,7 +48,7 @@ namespace SecureFileSender
             {
                 PgpDecrypt Pgp = new PgpDecrypt();
                 Pgp.DecryptFile(txtFileToDecrypt.Text, txtPrivateKeyFile.Text, txtPassPhrase.Text.ToCharArray(), txtDecryptedFileOutput.Text);
-                MessageBox.Show("File Decrypted Successfully.Please check the output directory for decrypted file.","Decryption Completed",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("File Decrypted Successfully.Please check the output directory for decrypted file.", "Decryption Completed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch
             {

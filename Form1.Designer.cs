@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtEncryptedFileName = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.txtOutputDirectory = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,14 +60,16 @@
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog4 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog2 = new System.Windows.Forms.FolderBrowserDialog();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtEncryptedFileName = new System.Windows.Forms.TextBox();
+            this.chkDeleteFile = new System.Windows.Forms.CheckBox();
+            this.chkHideFile = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chkHideFile);
+            this.groupBox1.Controls.Add(this.chkDeleteFile);
             this.groupBox1.Controls.Add(this.txtEncryptedFileName);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.linkLabel3);
@@ -85,6 +89,23 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "File Encryptor";
+            // 
+            // txtEncryptedFileName
+            // 
+            this.txtEncryptedFileName.Location = new System.Drawing.Point(204, 234);
+            this.txtEncryptedFileName.Name = "txtEncryptedFileName";
+            this.txtEncryptedFileName.Size = new System.Drawing.Size(291, 29);
+            this.txtEncryptedFileName.TabIndex = 11;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(27, 239);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(170, 19);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Select Output File Name";
             // 
             // linkLabel3
             // 
@@ -172,7 +193,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(441, 299);
+            this.button1.Location = new System.Drawing.Point(441, 348);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 35);
             this.button1.TabIndex = 0;
@@ -338,22 +359,27 @@
             this.openFileDialog4.FileName = "openFileDialog2";
             this.openFileDialog4.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog4_FileOk);
             // 
-            // label8
+            // chkDeleteFile
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(27, 239);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(170, 19);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Select Output File Name";
+            this.chkDeleteFile.AutoSize = true;
+            this.chkDeleteFile.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkDeleteFile.Location = new System.Drawing.Point(31, 290);
+            this.chkDeleteFile.Name = "chkDeleteFile";
+            this.chkDeleteFile.Size = new System.Drawing.Size(262, 23);
+            this.chkDeleteFile.TabIndex = 12;
+            this.chkDeleteFile.Text = "Delete Source File After Encryption";
+            this.chkDeleteFile.UseVisualStyleBackColor = true;
             // 
-            // txtEncryptedFileName
+            // chkHideFile
             // 
-            this.txtEncryptedFileName.Location = new System.Drawing.Point(204, 234);
-            this.txtEncryptedFileName.Name = "txtEncryptedFileName";
-            this.txtEncryptedFileName.Size = new System.Drawing.Size(291, 29);
-            this.txtEncryptedFileName.TabIndex = 11;
+            this.chkHideFile.AutoSize = true;
+            this.chkHideFile.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkHideFile.Location = new System.Drawing.Point(309, 290);
+            this.chkHideFile.Name = "chkHideFile";
+            this.chkHideFile.Size = new System.Drawing.Size(271, 23);
+            this.chkHideFile.TabIndex = 13;
+            this.chkHideFile.Text = "Hide Encrypted File After Encryption";
+            this.chkHideFile.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -407,6 +433,8 @@
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog2;
         private System.Windows.Forms.TextBox txtEncryptedFileName;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox chkHideFile;
+        private System.Windows.Forms.CheckBox chkDeleteFile;
     }
 }
 
