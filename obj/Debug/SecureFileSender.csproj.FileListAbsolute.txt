@@ -1,0 +1,14 @@
+D:\Projects\SecureFileSender\SecureFileSender\bin\Debug\SecureFileSender.exe.config
+D:\Projects\SecureFileSender\SecureFileSender\bin\Debug\SecureFileSender.exe
+D:\Projects\SecureFileSender\SecureFileSender\bin\Debug\SecureFileSender.pdb
+D:\Projects\SecureFileSender\SecureFileSender\bin\Debug\BouncyCastle.Crypto.dll
+D:\Projects\SecureFileSender\SecureFileSender\bin\Debug\BouncyCastle.Crypto.xml
+D:\Projects\SecureFileSender\SecureFileSender\obj\Debug\SecureFileSender.csproj.AssemblyReference.cache
+D:\Projects\SecureFileSender\SecureFileSender\obj\Debug\SecureFileSender.csproj.SuggestedBindingRedirects.cache
+D:\Projects\SecureFileSender\SecureFileSender\obj\Debug\SecureFileSender.Form1.resources
+D:\Projects\SecureFileSender\SecureFileSender\obj\Debug\SecureFileSender.Properties.Resources.resources
+D:\Projects\SecureFileSender\SecureFileSender\obj\Debug\SecureFileSender.csproj.GenerateResource.cache
+D:\Projects\SecureFileSender\SecureFileSender\obj\Debug\SecureFileSender.csproj.CoreCompileInputs.cache
+D:\Projects\SecureFileSender\SecureFileSender\obj\Debug\SecureFileSender.csproj.CopyComplete
+D:\Projects\SecureFileSender\SecureFileSender\obj\Debug\SecureFileSender.exe
+D:\Projects\SecureFileSender\SecureFileSender\obj\Debug\SecureFileSender.pdb
